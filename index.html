@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container startScreen">
+        <h2>Quiz app</h2>
+        <p>1.You will be given 5 questions<br>
+            2.each question has 4 options<br>
+            3.you will get 1 point for each correct answer<br>
+            4.you will get 0 point for each wrong answer<br>
+            5.there is a time limit of 30 seconds for each question
+        </p>
+        <div class="btn">
+            <input type="text" id="userName" placeholder="Enter your name" />
+            <br />
+                <button class="startQuiz" onclick ="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="container playground" >
+<div class="quizHeader">
+<div><span id="questionCount">1</span> of 5 questions</div>
+<div>
+    <i class="fa-solid fa-stopwatch"></i>
+    <span id="questionTimer">10</span>
+</div>
+</div>
+
+    <div class="quizBody">
+        <h3 id="question"></h3>
+        <ul id="quizOptions"></u1>
+    </div>
+
+    <div class="loader">
+        <i class="fa-solid fa-gear fa-spin"></i>
+    </div>
+    
+    <div class="quizFooter">
+        <button class="btn" id="nextButton" onclick="nextQuestion()">Next</button>
+    </div>
+</div>
+<div class="container endScreen">
+    <p>Quiz completed</p>
+    <p>Hello! <span id="resultUserName"></span></p>
+    <p>Your Result is <span class="finalScore">0</span> out of 5</p>
+    <div class="btn">
+                <button class="resetQuiz" onclick ="startQuiz()">Try Again</button>
+        </div>
+</div>
+</body>
+</html>

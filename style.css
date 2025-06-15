@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap) ;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #78c1f3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+}
+
+.container h2{
+    font-size: 25px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin: 2rem e;
+    text-align: center;
+}
+
+.btn input,
+.btn button{
+    width:50%;
+    height:45px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.btn .startQuiz,
+.btn .resetQuiz{
+    background-color: #78c1f3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+}
+.quizHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.quizBody{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.loader{
+    text-align: center;
+    margin: 5rem;
+}
+
+.loader i{
+    font-size: 55px;
+}
+
+.quizFooter{
+    text-align: end;
+}
+
+.quizFooter .btn{
+    height :35px;
+    width:20%;
+    cursor: pointer;
+    color: #fff;
+    background: #55b7f9;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.playground,
+.endScreen,
+.loader{
+    display: none;
+}
+
+.quizBody #quizOptions{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.quizBody #quizOptions li{
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.quizBody #quizOptions li:hover{
+    border: 1px solid #92ff66;
+}
+
+.quizBody #quizOptions li.correct{
+    background: #d6ffd6;
+    color: #92ff66;
+    border-color: #92ff66;
+}
+
+.quizBody #quizOptions li.incorrect{
+    background: #ffd6d6;
+    color: #fb4848;
+    border-color: #fb4848;
+}
+.disabled{
+    pointer-events: none;
+}
+
+.endScreen p{
+    
+    text-align: center;
+    margin-bottom: 10px;
+}   
