@@ -12,7 +12,8 @@
 
 *MENTOR*: NEELA SANTOSH
 
-🎯 Quiz App
+
+#🎯 Quiz App
 A simple, responsive, and interactive quiz web application built with HTML, CSS, and JavaScript. It dynamically fetches questions from an API and offers a fun way to test your knowledge on various topics. The app is designed with a user-friendly interface and includes timer functionality, scoring, and instant feedback for each answer.
 
 🚀 Features
