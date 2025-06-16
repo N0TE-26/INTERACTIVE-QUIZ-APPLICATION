@@ -78,9 +78,7 @@ Incorrect answers turn red, and the correct one is highlighted.
 Score Display: Final score and name are shown at the end.
 
 📂 Project Structure
-bash
-Copy
-Edit
+
 quiz-app/
 
 ├── index.html          # Main HTML file
