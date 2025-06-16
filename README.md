@@ -82,8 +82,11 @@ bash
 Copy
 Edit
 quiz-app/
+
 ├── index.html          # Main HTML file
+
 ├── style.css           # Styling file
+
 ├── app.js              # JavaScript logic
 
 
